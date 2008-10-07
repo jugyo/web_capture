@@ -8,17 +8,17 @@ xulrunner 1.8 or later
 
 * Linux
 
-例として、サイト「http://jugyo.org/」のスクリーンショットを取得し、
-カレントディレクトリ以下に「screenshot.png」というファイル名で保存するような
+例として、サイト http://jugyo.org/ のスクリーンショットを取得し、
+カレントディレクトリ以下に screenshot.png というファイル名で保存するような
 コマンドを実行してみます。
 
   $ xulrunner application.ini -url http://jugyo.org/ -file screenshot.png
 
-jpeg 画像として保存したい場合は「-type jpeg」オプションを付けます。
+jpeg 画像として保存したい場合は -type jpeg オプションを付けます。
 
   $ xulrunner application.ini -url http://jugyo.org/ -file screenshot.jpg -type jpeg
 
-「-type」オプションを指定しなかった場合は png として保存されます。
+-type オプションを指定しなかった場合は png として保存されます。
 
 [その他]
 
