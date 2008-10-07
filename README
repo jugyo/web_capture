@@ -1,0 +1,19 @@
+[必要なもの]
+
+xulrunner 1.8 or later
+
+（たぶんこれだけでいけるはず）
+
+[使い方]
+
+* Linux
+
+$ xulrunner application.ini -url http://jugyo.org/ -file screenshot.png
+
+[その他]
+
+Windows と Mac ではまだ動作確認してません
+
+[ライセンス]
+BSD
+
