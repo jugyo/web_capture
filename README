@@ -1,7 +1,6 @@
 [必要なもの]
 
 xulrunner 1.8 or later
-
 （たぶんこれだけでいけるはず）
 
 [使い方]
@@ -10,7 +9,7 @@ xulrunner 1.8 or later
 
 例として、サイト http://jugyo.org/ のスクリーンショットを取得し、
 カレントディレクトリ以下に screenshot.png というファイル名で保存するような
-コマンドを実行してみます。
+コマンドを実行してみます。以下のようにします。
 
   $ xulrunner application.ini -url http://jugyo.org/ -file screenshot.png
 
@@ -26,4 +25,5 @@ Windows と Mac ではまだ動作確認してません
 
 [ライセンス]
 BSD
+（いや、なんでもよかったんすけど。たいしたコードじゃないし。）
 
