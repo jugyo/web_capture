@@ -4,7 +4,7 @@ Web サイトのスクリーンショットを作成するためのコマンド�
 
 [必要なもの]
 
-X.org or Xvfb
+X.org or Xvfb (Linux の場合)
 xulrunner 1.8 or later
 
 [使い方]
@@ -12,8 +12,8 @@ xulrunner 1.8 or later
 * Linux
 
 例として、サイト http://jugyo.org/ のスクリーンショットを取得し、
-カレントディレクトリ以下に screenshot.png というファイル名で保存するような
-コマンドを実行してみます。以下のようにします。
+カレントディレクトリ以下に screenshot.png というファイル名で保存してみます。
+以下のコマンドを実行します。
 
   $ xulrunner application.ini -url http://jugyo.org/ -file screenshot.png
 
@@ -29,5 +29,3 @@ Windows と Mac ではまだ動作確認してません
 
 [ライセンス]
 BSD
-（いや、なんでもよかったんすけど。たいしたコードじゃないし。）
-
