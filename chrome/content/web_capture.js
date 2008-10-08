@@ -9,18 +9,21 @@ function run() {
         if (!image_type) {
             image_type = 'png';
         }
-        browser.loadURI(url);
         browser.addEventListener("load", function() {
-            setTimeout(function () {
-                try {
-                    shot(file_path, image_type);
-                } finally {
-                    quit();
-                }
-            }, 
-            1);
-        },
-        true);
+                setTimeout(function() {
+                    try {
+                        shot(file_path, image_type);
+                    } finally {
+                        quit();
+                    }
+                }, 
+                1000);
+            },
+            true);
+        browser.loadURI(url);
+        setTimeout(function() { quit(); }, 60000);
+    } else {
+        quit();
     }
 }
 
