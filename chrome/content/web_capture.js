@@ -107,7 +107,7 @@ function get_nsFile(file_path) {
     var platform = Components.classes['@mozilla.org/network/protocol;1?name=http']
                    .getService(Components.interfaces.nsIHttpProtocolHandler).oscpu;
     if (platform.indexOf('Win') > -1) {
-        aPath = aPath.replace(/^\.\.\./g, '\.\.\\\.\.')
+        file_path = file_path.replace(/^\.\.\./g, '\.\.\\\.\.')
         .replace(/\\\.\.\./g, '\\\.\.\\\.\.')
         .replace(/\\/g, '/');
     }
